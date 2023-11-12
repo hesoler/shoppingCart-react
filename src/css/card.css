@@ -1,0 +1,63 @@
+.card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(205, 213, 221) !important;
+}
+
+.card-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card-category {
+  margin-bottom: 5px;
+}
+
+.card-description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.card button {
+  width: 100%;
+  margin: 10px 0 0;
+}
+
+.button-add {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.button-add:hover {
+  background-color: #45a049;
+}
+.button-remove {
+  background-color: #af4c4c;
+  color: white;
+  cursor: pointer;
+}
+
+.button-remove:hover {
+  background-color: #a04545;
+}
+
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
