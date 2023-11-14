@@ -23,5 +23,5 @@ export const ProductsProvider = ({ children }) => {
 };
 
 ProductsProvider.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.object.isRequired,
 };

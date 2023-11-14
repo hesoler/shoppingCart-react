@@ -10,14 +10,18 @@ export const Card = ({
   description,
   price,
   rating,
+  handleAdd,
+  handleRemove,
 }) => {
   const [added, setAdded] = useState(false);
 
   const addButton = () => {
+    handleAdd();
     setAdded(true);
   };
 
   const removeButton = () => {
+    handleRemove();
     setAdded(false);
   };
 
@@ -75,4 +79,6 @@ Card.propTypes = {
   description: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   rating: PropTypes.object.isRequired,
+  handleAdd: PropTypes.func.isRequired,
+  handleRemove: PropTypes.func.isRequired,
 };
