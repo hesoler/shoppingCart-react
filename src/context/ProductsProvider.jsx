@@ -11,6 +11,15 @@ export const ProductsProvider = ({ children }) => {
     setProducts(data);
   };
 
+  //* another way to doing fetch: using promises
+  /**
+     const fetchProducts = () => {
+       fetch("https://fakestoreapi.com/products")
+         .then((res) => res.json())
+         .then((json) => setProducts(json));
+      }
+  */
+
   useEffect(() => {
     fetchProducts();
   }, []);
